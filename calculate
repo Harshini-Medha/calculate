@@ -1,0 +1,111 @@
+index.js
+
+
+function Calculator(event) {
+  event.preventDefault();
+  const mul = document.getElementById("firstno").value;
+  const mul2 = document.getElementById("secondno").value;
+  console.log(Number(mul)*Number(mul2))
+}
+
+index.html<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="firstno" type="number" />
+    <input id="secondno " type="number" />
+    <button onclick="Calculator(event)">calculate</button>
+    <h3></h3>
+  </body>
+  <script src="index.js"></script>
+</html>
+
+
+another html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+      integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+      integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="w-full h-screen flex flex-col items-center">
+      <div class="w-full h-[17%] flex justify-between items-center bg-blue-700">
+        <span
+          class="w-[20%] h-screen flex hover:scale-110 transition-ease-in duration-200 hover:cursor-pointer  text-white text-3xl items-center justify-center"
+          ><i>Property Angel</i></span
+        >
+        <span
+          class="w-[50%] h-[100%] flex justify-evenly  text-white hover:cursor-pointer items-center"
+          ><span class="hover:border-b-[1px] border-white hover:text-xl ">Home</span>
+          <span class="hover:border-b-[1px] border-white hover:text-xl">Contact Us</span>
+          <span class="hover:border-b-[1px] border-white hover:text-xl">About Us</span>
+          <span
+            class="w-[70px] h-[70px] position-relative hover:scale-110 transition-ease-in duration-200 text-center justify-center bg-white text-blue-700 rounded-full flex text-3xl"
+            ><i
+              class="justify-center items-center flex text-center fa-sharp fa-solid fa-house"
+            ></i>
+            <span
+              class="text-[100px] text-red-400 absolute mt-[-52px] ml-[35px] flex justify-end items-start text-start"
+              >.</span
+            ></span
+          >
+        </span>
+      </div>
+      <form onsubmit="SubmitData(event)"
+        class="w-full h-[83%] rounded flex flex-col justify-center items-center"
+      >
+        <div
+          class="w-[30%] h-[70%] flex text-blue-700 font-bolder shadow-lg shadow-blue-800 flex rounded-md flex-col justify-center justify-evenly border-2 border-blue-700 items-center "
+        >
+          <span
+            ><span>User Name:    </span>
+            <input required id="userName" class="outline-none text-black border-b-2 border-blue-700 " placeholder=  "enter your user name"
+          /></span>
+          <span>
+            <span>Password:</span>
+            <input required id="Pass" class="outline-none text-black border-b-2 border-blue-700 "  type="password " placeholder="enter your password"
+          /></span>
+          <span>
+            <span>Mobile no.:</span>
+            <input required id="Mob" class="outline-none text-black border-b-2  border-blue-700" type="Number" placeholder="enter your mob"
+          /></span>
+          <button type="submit"
+            class="w-[20%] h-[10%] flex text-white font-bolder  bg-blue-700 justify-center  items-center rounded-full hover:bg-white hover:text-blue-700 hover:font-bold border-2 border-blue-700 transition-all ease-in duration-150"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+    </section>
+    <script src="/index.js"></script>
+  </body>
+</html>
